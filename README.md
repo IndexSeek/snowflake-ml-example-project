@@ -10,7 +10,7 @@ Quickstart.
 
 ## Setting things up
 
-Python should first be installed installed. The following Python versions are
+Python should first be installed. The following Python versions are
 currently supported:
 - 3.8
 - 3.9
@@ -40,9 +40,8 @@ python setup_db.py
 ```
 
 This project can be executed either directly from the command line or can be
-setup to run inside of Snowflake with a DAG.
-
-Either/or may be used, but running both is not necessary.
+setup to run inside of Snowflake with a DAG. Either/or may be used, but running
+both is not necessary.
 
 ### The command line
 
