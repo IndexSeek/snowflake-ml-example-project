@@ -24,7 +24,16 @@ def load_data(session: Session) -> str:
         ]
     )
     # Create a Snowpark DataFrame from the file in the stage.
-    df = session.read.option("skip_header", 1).schema(schema).csv("@DATA.DATA")
+    df = (
+        session.read.options(
+            dict(
+                SKIP_HEADER=1,
+                FIELD_OPTIONALLY_ENCLOSED_BY='"',
+            )
+        )
+        .schema(schema)
+        .csv("@DATA.DATA")
+    )
     # Uppercase the column names so they'll play nicely with Snowflake.
     df = uppercase_columns(df)
     # The column name "TABLE" is likely going to create an issue, let's rename it.

@@ -41,12 +41,12 @@ def deploy_dag(session: Session) -> str:
     ) as dag:
         load_task = DAGTask(
             name="LOAD_DATA_TASK",
-            definition="CALL LOAD_DIAMONDS_DATA();",
+            definition="CALL COMMON.LOAD_DIAMONDS_DATA();",
             warehouse="COMPUTE_WH",
         )
         train_task = DAGTask(
             name="TRAIN_MODEL_TASK",
-            definition="CALL TRAIN_MODEL();",
+            definition="CALL COMMON.TRAIN_DIAMONDS_MODEL();",
             warehouse="COMPUTE_WH",
         )
         load_task >> train_task
