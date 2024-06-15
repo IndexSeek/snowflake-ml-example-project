@@ -73,3 +73,6 @@ taken care of.
 ```sh
 python3 register_deploy_dags.py
 ```
+
+<img width="967" alt="image" src="https://github.com/IndexSeek/snowflake-ml-example-project/assets/50381805/63f47739-4601-46c3-b93e-e3f8c2e6fdeb">
+
