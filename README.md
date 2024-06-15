@@ -57,17 +57,17 @@ python3 train_model.py
 
 ### Inside Snowflake
 
+This approach is recommended for centralizing and managing compute tasks and
+scheduling within the Snowflake platform. It will set up stored procedures and
+tasks that can be executed automatically with the Python environment setup
+taken care of.
+
 The `EXECUTE TASK ON ACCOUNT` privilege is required for the role if using this
 approach.
 
 ```sql
 GRANT EXECUTE TASK ON ACCOUNT TO ROLE {YOUR_ROLE};
 ```
-
-This approach is recommended for centralizing and managing compute tasks and
-scheduling within the Snowflake platform. It will set up stored procedures and
-tasks that can be executed automatically with the Python environment setup
-taken care of.
 
 Please note the task is suspended by default for testing; scheduling
 is recommended. Adjusting warehouses in the task definitions is encouraged to
