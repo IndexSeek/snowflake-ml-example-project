@@ -1,5 +1,6 @@
 import seaborn as sns
 from snowflake.snowpark import Session
+
 from ml_project.utils import uppercase_columns
 
 
@@ -19,4 +20,5 @@ def load_data(session: Session) -> str:
 
 if __name__ == "__main__":
     session = Session.builder.create()
-    raise SystemExit(load_data(session))
+    load_data(session)
+    raise SystemExit()
