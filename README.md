@@ -50,8 +50,8 @@ compute operations will still be pushed down to Snowflake, and the model will
 still be persisted in the Snowflake Model Registry.
 
 ```sh
-python3 load_data.py
-python3 train_model.py
+python3 ml_project/load_data.py
+python3 ml_project/train_model.py
 ```
 
 ### Inside Snowflake
