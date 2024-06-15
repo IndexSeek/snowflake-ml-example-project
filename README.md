@@ -22,7 +22,7 @@ things up using pip from the project's root. (Please note, the activation
 step may vary based on the shell.)
 
 ```sh
-python3 -m venv venv
+python3 -m venv .venv
 source .venv/bin/activate
 pip install -e .
 ```
