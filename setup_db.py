@@ -7,4 +7,5 @@ if __name__ == "__main__":
     session.sql("CREATE SCHEMA COMMON").collect()
     session.sql("CREATE SCHEMA DATA").collect()
     session.sql("CREATE SCHEMA MODELS").collect()
+    session.sql("CREATE STAGE COMMON.PYTHON_CODE").collect()
     raise SystemExit()
