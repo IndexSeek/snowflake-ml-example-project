@@ -9,6 +9,7 @@ version = "0.1.0"
 readme = "README.md"
 dependencies = [
     "numpy==1.26.3",
+    "seaborn==0.12.2",
     "snowflake==0.9.0",
     "snowflake-core==0.9.0",
     "snowflake-ml-python==1.4.0",

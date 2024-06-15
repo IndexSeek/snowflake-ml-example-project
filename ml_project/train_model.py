@@ -4,7 +4,8 @@ from snowflake.ml.modeling.preprocessing import MinMaxScaler, OrdinalEncoder
 from snowflake.ml.modeling.xgboost import XGBRegressor
 from snowflake.ml.registry import Registry
 from snowflake.snowpark import Session
-from utils import get_next_version
+
+from ml_project.utils import get_next_version
 
 
 def train_model(session: Session) -> str:
