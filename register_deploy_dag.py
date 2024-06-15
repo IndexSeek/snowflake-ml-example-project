@@ -12,7 +12,7 @@ def register_procedures(session: Session) -> str:
         is_permanent=True,
         stage_location="@COMMON.PYTHON_CODE",
         imports=["ml_project"],
-        packages=["seaborn==0.12.2", "snowflake-ml-python==1.4.0"],
+        packages=["snowflake-ml-python==1.4.0"],
         replace=True,
         execute_as="caller",
     )

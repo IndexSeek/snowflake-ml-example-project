@@ -70,14 +70,13 @@ tasks that can be executed automatically with the Python environment setup
 taken care of.
 
 Please note the task is suspended by default for testing; scheduling
-is recommended. Adjusting warehouses in the task definitions is encouraged to 
-demonstrate configurable compute specifications. For example, the load_data task 
-could use a smaller warehouse, where you may want to use a larger warehouse to 
-train a model in practice. 
+is recommended. Adjusting warehouses in the task definitions is encouraged to
+demonstrate configurable compute specifications. For example, the load_data task
+could use a smaller warehouse, where you may want to use a larger warehouse to
+train a model in practice.
 
 ```sh
 python3 register_deploy_dags.py
 ```
 
 <img width="967" alt="image" src="https://github.com/IndexSeek/snowflake-ml-example-project/assets/50381805/63f47739-4601-46c3-b93e-e3f8c2e6fdeb">
-
